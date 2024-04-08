@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 20px;
+    color: red;
+}
+
+.title{
+    font-size: 6rem;
+    grid-area: title;
+}
+
+.subtitle{
+    font-size: 4rem;
+    grid-area: subtitle;
+    justify-content: end;
+}
+
+img{
+    max-width:100%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.header{
+    display: grid;
+    grid-area: 
+    "title title"
+    "subtitle subtitle";
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .title,
+    .subtitle{
+        color: blue;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        display:grid;
+        grid-area:
+        "title"
+        "subtitle";
+        justify-content: center;
+    }
+    .title,
+    .subtitle{
+        color: orange;
+    }
+}
