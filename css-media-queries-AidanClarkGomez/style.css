@@ -16,7 +16,6 @@ body{
 .subtitle{
     font-size: 4rem;
     grid-area: subtitle;
-    justify-content: end;
 }
 
 img{
@@ -31,10 +30,11 @@ img{
 
 .header{
     display: grid;
-    grid-area: 
-    "title title"
-    "subtitle subtitle";
-
+    grid-template-areas: 
+    "title ."
+    ". subtitle";
+    justify-items: center;
+    
 }
 
 
